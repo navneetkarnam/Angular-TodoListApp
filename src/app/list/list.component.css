@@ -1,0 +1,19 @@
+input{
+  width: 300px;
+  padding: 3px;
+}
+
+.input{
+  padding: 2px;
+}
+
+button{
+  margin-left: 10px;
+}
+
+li{
+  margin-top: 5%;
+  line-height: 1;
+  width: inherit;
+  margin-left: 0%;
+}
