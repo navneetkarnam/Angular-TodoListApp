@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {isNullOrUndefined} from "util";
 
 @Component({
   selector: 'app-list',
@@ -10,8 +11,15 @@ export class ListComponent {
   task: string;
   constructor() { }
   add(): void {
-    this.listAll.push(this.task);
-    this.task = '';
+    if(isNullOrUndefined(this.task)){
+      alert('Enter a task!');
+    }
+    else {
+      this.listAll.push(this.task);
+      this.task = null;
+    }
   }
+
+
 
 }

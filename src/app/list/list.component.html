@@ -1,7 +1,7 @@
 <div class="input">
   <form>
-    <input required type="text" name="inputList" placeholder="Enter the task to add" [(ngModel)]="task" limitAlphaOnly minlength=1>
-    <button *ngIf="task != null" class="btn btn-primary btn-sm" (click)="add()">Add</button>
+    <input type="text" name="inputList" placeholder="Enter the task to add" [(ngModel)]="task" limitAlphaOnly minlength=1>
+    <button class="btn btn-primary btn-sm" (click)="add()">Add</button>
   </form>
 </div>
 <div>
